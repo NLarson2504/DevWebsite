@@ -39,8 +39,23 @@ nav {
           align-items: center;
   min-height: 8vh;
   font-family: var(--primary-font);
-  padding: 0 75px 0 75px;
+  padding: 0 6.25% 0 6.25%;
   background: var(--primary-dark-color);
+}
+
+nav .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu-nav .logo {
+  padding-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  margin-right: 40px;
 }
 
 nav .call_action {
@@ -184,69 +199,53 @@ nav .call_action a {
   background: var(--primary-dark-color);
 }
 
-.section_wrap section .landing .hero_wrap {
-  width: 100%;
+.section_wrap section .landing .left {
+  width: 50%;
+  height: calc(100% - 8vh);
+  margin-top: 8vh;
+  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.section_wrap section .landing .hero_wrap .hero_upper {
-  position: absolute;
-  margin: auto;
-  background: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30vh;
-  margin-left: 0%;
+.section_wrap section .landing .left .hero_wrap {
+  width: 75%;
+  margin-left: 12.5%;
 }
 
-.section_wrap section .landing .hero_wrap .hero_upper h1 {
+.section_wrap section .landing .left .hero_wrap .hero_upper {
+  text-align: left;
+  margin-top: 25vh;
+  margin-left: 10%;
+}
+
+.section_wrap section .landing .left .hero_wrap .hero_upper h1 {
   font-family: var(--primary-font);
   font-weight: 700;
-  font-size: 60px;
+  font-size: calc(3vw + 25px);
   background: transparent;
   color: white;
 }
 
-.section_wrap section .landing .hero_wrap .hero_lower {
-  position: absolute;
-  margin: auto;
-  background: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40vh;
-  margin-left: 0%;
-}
-
-.section_wrap section .landing .hero_wrap .hero_lower h1 {
+.section_wrap section .landing .left .hero_wrap .hero_upper h1 .special_text {
   font-family: var(--primary-font);
   font-weight: 700;
-  font-size: 60px;
+  font-size: calc(3vw + 25px);
   background: transparent;
   background: var(--secondary-dark-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.section_wrap .value-page {
+.section_wrap section .landing .right {
+  width: 50%;
+  height: calc(100% - 8vh);
+  margin-top: 8vh;
+  float: right;
+}
+
+.section_wrap section .value-page {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -255,7 +254,7 @@ nav .call_action a {
   background: var(--primary-dark-color);
 }
 
-.section_wrap .value-page .value-wrapper {
+.section_wrap section .value-page .value-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +265,7 @@ nav .call_action a {
   height: 100%;
 }
 
-.section_wrap .value-page .value-wrapper .col-one {
+.section_wrap section .value-page .value-wrapper .col-one {
   float: left;
   position: relative;
   width: calc(100%/3);
@@ -284,7 +283,7 @@ nav .call_action a {
   text-align: center;
 }
 
-.section_wrap .value-page .value-wrapper .col-one h3 {
+.section_wrap section .value-page .value-wrapper .col-one h3 {
   font-size: 2.25em;
   position: absolute;
   background: transparent;
@@ -295,7 +294,7 @@ nav .call_action a {
   transition: 0.75s ease-in-out;
 }
 
-.section_wrap .value-page .value-wrapper .col-one p {
+.section_wrap section .value-page .value-wrapper .col-one p {
   font-size: 1em;
   position: absolute;
   background: transparent;
@@ -310,25 +309,25 @@ nav .call_action a {
   padding-right: 5%;
 }
 
-.section_wrap .value-page .value-wrapper .col-one:hover .img-wrap {
+.section_wrap section .value-page .value-wrapper .col-one:hover .img-wrap {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   visibility: visible;
 }
 
-.section_wrap .value-page .value-wrapper .col-one:hover h3 {
+.section_wrap section .value-page .value-wrapper .col-one:hover h3 {
   opacity: 1;
   -webkit-transform: translate(0, -150px);
           transform: translate(0, -150px);
 }
 
-.section_wrap .value-page .value-wrapper .col-one:hover p {
+.section_wrap section .value-page .value-wrapper .col-one:hover p {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-.section_wrap .value-page .value-wrapper .col-two {
+.section_wrap section .value-page .value-wrapper .col-two {
   float: left;
   position: relative;
   height: 100%;
@@ -346,7 +345,7 @@ nav .call_action a {
   text-align: center;
 }
 
-.section_wrap .value-page .value-wrapper .col-two h3 {
+.section_wrap section .value-page .value-wrapper .col-two h3 {
   font-size: 2.25em;
   position: absolute;
   margin-top: auto;
@@ -358,7 +357,7 @@ nav .call_action a {
   transition: 0.75s ease-in-out;
 }
 
-.section_wrap .value-page .value-wrapper .col-two p {
+.section_wrap section .value-page .value-wrapper .col-two p {
   font-size: 1em;
   position: absolute;
   background: transparent;
@@ -373,25 +372,25 @@ nav .call_action a {
   padding-right: 5%;
 }
 
-.section_wrap .value-page .value-wrapper .col-two:hover .img-wrap {
+.section_wrap section .value-page .value-wrapper .col-two:hover .img-wrap {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   visibility: visible;
 }
 
-.section_wrap .value-page .value-wrapper .col-two:hover h3 {
+.section_wrap section .value-page .value-wrapper .col-two:hover h3 {
   opacity: 1;
   -webkit-transform: translate(0, -150px);
           transform: translate(0, -150px);
 }
 
-.section_wrap .value-page .value-wrapper .col-two:hover p {
+.section_wrap section .value-page .value-wrapper .col-two:hover p {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-.section_wrap .value-page .value-wrapper .col-three {
+.section_wrap section .value-page .value-wrapper .col-three {
   float: left;
   position: relative;
   height: 100%;
@@ -409,7 +408,7 @@ nav .call_action a {
   text-align: center;
 }
 
-.section_wrap .value-page .value-wrapper .col-three h3 {
+.section_wrap section .value-page .value-wrapper .col-three h3 {
   font-size: 2.25em;
   font-weight: 700;
   position: absolute;
@@ -422,7 +421,7 @@ nav .call_action a {
   transition: 0.75s ease-in-out;
 }
 
-.section_wrap .value-page .value-wrapper .col-three p {
+.section_wrap section .value-page .value-wrapper .col-three p {
   font-size: 1em;
   position: absolute;
   background: transparent;
@@ -437,32 +436,32 @@ nav .call_action a {
   padding-right: 5%;
 }
 
-.section_wrap .value-page .value-wrapper .col-three:hover .img-wrap {
+.section_wrap section .value-page .value-wrapper .col-three:hover .img-wrap {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   visibility: visible;
 }
 
-.section_wrap .value-page .value-wrapper .col-three:hover h3 {
+.section_wrap section .value-page .value-wrapper .col-three:hover h3 {
   opacity: 1;
   -webkit-transform: translate(0, -150px);
           transform: translate(0, -150px);
 }
 
-.section_wrap .value-page .value-wrapper .col-three:hover p {
+.section_wrap section .value-page .value-wrapper .col-three:hover p {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-.section_wrap .value-page .value-wrapper .thin-white-line-vert {
+.section_wrap section .value-page .value-wrapper .thin-white-line-vert {
   height: 100px;
   width: 0.1px;
   background: #ffffff;
   opacity: 0.2;
 }
 
-.section_wrap .value-page .value-wrapper .img-wrap {
+.section_wrap section .value-page .value-wrapper .img-wrap {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -474,12 +473,12 @@ nav .call_action a {
   transition: 1s ease-out;
 }
 
-.section_wrap .value-page .value-wrapper .img-wrap img {
+.section_wrap section .value-page .value-wrapper .img-wrap img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.section_wrap .work-page {
+.section_wrap section .work-page {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -488,7 +487,7 @@ nav .call_action a {
   background: white;
 }
 
-.section_wrap .work-page .hero {
+.section_wrap section .work-page .hero {
   width: 100%;
   height: calc(100% - 50px);
   margin-top: 50px;
@@ -501,7 +500,7 @@ nav .call_action a {
           flex-direction: row;
 }
 
-.section_wrap .work-page .hero .text {
+.section_wrap section .work-page .hero .text {
   padding-top: 4%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -511,21 +510,21 @@ nav .call_action a {
   height: 30%;
 }
 
-.section_wrap .work-page .hero .text h1 {
+.section_wrap section .work-page .hero .text h1 {
   color: black;
   font-family: var(--secondary-font);
   font-size: calc(5vw + 30px);
   font-weight: 700;
 }
 
-.section_wrap .work-page .hero .text h2 {
+.section_wrap section .work-page .hero .text h2 {
   color: var(--primary-mid-color);
   font-family: var(--primary-font);
   font-size: calc(1.5vw + 6px);
   font-weight: 400;
 }
 
-.section_wrap .work-page .hero .model {
+.section_wrap section .work-page .hero .model {
   margin-top: 5%;
   width: 100%;
   height: 65%;
@@ -537,7 +536,7 @@ nav .call_action a {
           justify-content: center;
 }
 
-.section_wrap .work-page .hero .model ul {
+.section_wrap section .work-page .hero .model ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,7 +550,7 @@ nav .call_action a {
   list-style: none;
 }
 
-.section_wrap .work-page .hero .model ul li {
+.section_wrap section .work-page .hero .model ul li {
   border-radius: 10px;
   background-color: var(--primary-light-color);
   width: 25vw;
@@ -571,19 +570,19 @@ nav .call_action a {
   transition: 0.3s ease;
 }
 
-.section_wrap .work-page .hero .model ul li:hover {
+.section_wrap section .work-page .hero .model ul li:hover {
   -webkit-box-shadow: 25px 25px var(--secondary-light-color);
           box-shadow: 25px 25px var(--secondary-light-color);
 }
 
-.section_wrap .work-page .hero .model ul li h1 {
+.section_wrap section .work-page .hero .model ul li h1 {
   color: black;
   font-family: var(--primary-font);
   font-size: 2.5vw;
   margin-top: 2.5%;
 }
 
-.section_wrap .work-page .hero .model ul li p {
+.section_wrap section .work-page .hero .model ul li p {
   font-family: var(--primary-font);
   font-size: 1.5vw;
   margin-top: 2.5%;
@@ -591,19 +590,19 @@ nav .call_action a {
   margin-right: 5%;
 }
 
-.section_wrap .work-page .hero .model ul li svg {
+.section_wrap section .work-page .hero .model ul li svg {
   margin-top: 10%;
 }
 
-.section_wrap .work-page .title {
+.section_wrap section .work-page .title {
   color: black;
 }
 
-.section_wrap .work-page .title-num {
+.section_wrap section .work-page .title-num {
   color: black;
 }
 
-.section_wrap .about-page {
+.section_wrap section .about-page {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -612,7 +611,7 @@ nav .call_action a {
   background-color: #ffffff;
 }
 
-.section_wrap .about-page .left {
+.section_wrap section .about-page .left {
   width: 50%;
   float: left;
   -webkit-box-align: center;
@@ -620,11 +619,11 @@ nav .call_action a {
           align-items: center;
 }
 
-.section_wrap .about-page .left .circle_wrap {
+.section_wrap section .about-page .left .circle_wrap {
   opacity: 0.4;
 }
 
-.section_wrap .about-page .left .circle_wrap .circle {
+.section_wrap section .about-page .left .circle_wrap .circle {
   width: 650px;
   height: 110vh;
   border-radius: 50%;
@@ -634,7 +633,7 @@ nav .call_action a {
           transform: translateX(-300px);
 }
 
-.section_wrap .about-page .left .hero {
+.section_wrap section .about-page .left .hero {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -648,7 +647,7 @@ nav .call_action a {
           justify-content: center;
 }
 
-.section_wrap .about-page .left .hero h1 {
+.section_wrap section .about-page .left .hero h1 {
   position: absolute;
   color: black;
   margin: auto;
@@ -661,7 +660,7 @@ nav .call_action a {
           transform: translateY(-15vh);
 }
 
-.section_wrap .about-page .left .hero p {
+.section_wrap section .about-page .left .hero p {
   position: absolute;
   color: black;
   font-weight: 400;
@@ -673,12 +672,12 @@ nav .call_action a {
           transform: translateY(5vh);
 }
 
-.section_wrap .about-page .right {
+.section_wrap section .about-page .right {
   width: 50%;
   float: right;
 }
 
-.section_wrap .about-page .right .svg_wrap {
+.section_wrap section .about-page .right .svg_wrap {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -694,12 +693,12 @@ nav .call_action a {
           transform: translate3d(0, 0, 0);
 }
 
-.section_wrap .about-page .right .svg_wrap svg {
+.section_wrap section .about-page .right .svg_wrap svg {
   margin: 0 5% 0 5%;
   display: block;
 }
 
-.section_wrap .about-page h1 {
+.section_wrap section .about-page h1 {
   position: absolute;
   color: black;
   font-size: 100px;
@@ -707,15 +706,15 @@ nav .call_action a {
   background-color: white;
 }
 
-.section_wrap .about-page .title {
+.section_wrap section .about-page .title {
   color: black;
 }
 
-.section_wrap .about-page .title-num {
+.section_wrap section .about-page .title-num {
   color: black;
 }
 
-.section_wrap .contact-page {
+.section_wrap section .contact-page {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -724,7 +723,7 @@ nav .call_action a {
   background: black;
 }
 
-.section_wrap .contact-page .logo_wrap {
+.section_wrap section .contact-page .logo_wrap {
   position: absolute;
   width: 100%;
   /* Height of the footer*/
@@ -742,27 +741,27 @@ nav .call_action a {
   background: transparent;
 }
 
-.section_wrap .contact-page .logo_wrap .horizontal_line {
+.section_wrap section .contact-page .logo_wrap .horizontal_line {
   width: 100%;
   height: 1px;
   position: absolute;
   background: white;
 }
 
-.section_wrap .contact-page .logo_wrap .logo {
+.section_wrap section .contact-page .logo_wrap .logo {
   position: absolute;
   background: black;
   z-index: 2;
   padding: 10px;
 }
 
-.section_wrap .contact-page .contact_wrap {
+.section_wrap section .contact-page .contact_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section_wrap .contact-page .contact_wrap h1 {
+.section_wrap section .contact-page .contact_wrap h1 {
   position: absolute;
   margin-top: 200px;
   margin-left: 75px;
@@ -773,7 +772,7 @@ nav .call_action a {
   opacity: 0.5;
 }
 
-.section_wrap .contact-page .contact_wrap h2 {
+.section_wrap section .contact-page .contact_wrap h2 {
   position: absolute;
   color: white;
   font-family: var(--primary-font);
@@ -783,19 +782,19 @@ nav .call_action a {
   margin-top: 250px;
 }
 
-.section_wrap .contact-page .column_wrap {
+.section_wrap section .contact-page .column_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.section_wrap .contact-page .column_wrap .social_bar {
+.section_wrap section .contact-page .column_wrap .social_bar {
   margin-top: 380px;
   width: 25%;
 }
 
-.section_wrap .contact-page .column_wrap .social_bar h1 {
+.section_wrap section .contact-page .column_wrap .social_bar h1 {
   color: white;
   font-family: var(--primary-font);
   font-weight: 200;
@@ -804,7 +803,7 @@ nav .call_action a {
   margin-bottom: 25px;
 }
 
-.section_wrap .contact-page .column_wrap .social_bar ul {
+.section_wrap section .contact-page .column_wrap .social_bar ul {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,12 +814,12 @@ nav .call_action a {
           flex-direction: column;
 }
 
-.section_wrap .contact-page .column_wrap .social_bar ul li {
+.section_wrap section .contact-page .column_wrap .social_bar ul li {
   margin-bottom: 15px;
   list-style: none;
 }
 
-.section_wrap .contact-page .column_wrap .social_bar ul li a {
+.section_wrap section .contact-page .column_wrap .social_bar ul li a {
   color: white;
   font-family: var(--primary-font);
   font-size: 15px;
