@@ -130,11 +130,6 @@ nav .call_action a {
   border-radius: 5px;
 }
 
-.nav-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -964,7 +959,13 @@ nav .call_action a {
 
 @media screen and (max-width: 760px) {
   body {
-    overflow-x: hidden;
+    overflow: hidden;
+  }
+  body .nav-wrapper {
+    overflow: hidden;
+  }
+  body .nav-wrapper.vis {
+    overflow: visible;
   }
   body .nav-links {
     z-index: 9998;
@@ -975,7 +976,7 @@ nav .call_action a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #b9b0c1;
+    background-color: var(--primary-light-color);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -993,15 +994,22 @@ nav .call_action a {
     padding-top: 25vh;
     padding-bottom: 25vh;
   }
+  body .nav-links.nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   body .nav-links li {
     opacity: 0;
     background: inherit;
   }
   body .nav-links li a {
     font-size: 2.5rem;
-    margin-left: 1em;
+    margin-left: 20%;
     background: inherit;
-    color: #000000;
+    color: #ffffff;
+  }
+  body .nav-links li a:hover {
+    color: var(--primary-dark-color);
   }
   body .burger {
     display: block;

@@ -112,10 +112,6 @@ nav{
     border-radius: 5px;
 }
 
-.nav-active{
-    transform: translateX(0%);
-}
-
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -834,7 +830,15 @@ nav{
 //Shrunken Desktop
 @media screen and (max-width: 760px){
     body{
-        overflow-x: hidden;
+        overflow: hidden;
+
+        .nav-wrapper{
+            overflow: hidden;
+
+            &.vis{
+                overflow:visible;
+            }
+        }
 
         .nav-links{
             z-index: 9998;
@@ -843,7 +847,7 @@ nav{
             height: 100vh;
             top: 0vh;
             display: flex;
-            background-color: #b9b0c1;
+            background-color: var(--primary-light-color);
             flex-direction: column;
             align-items: left;
             width: 100%;
@@ -851,6 +855,10 @@ nav{
             transition: transform 0.5s ease-in;
             padding-top: 25vh;
             padding-bottom: 25vh;
+
+            &.nav-active{
+                transform: translateX(0%);
+            }
     
             li{
                 opacity: 0;
@@ -858,9 +866,13 @@ nav{
     
                 a{
                     font-size: 2.5rem;
-                    margin-left: 1em;
+                    margin-left: 20%;
                     background: inherit;
-                    color: #000000;
+                    color: #ffffff;
+
+                    &:hover{
+                        color: var(--primary-dark-color);
+                    }
                 }
             }
         }
