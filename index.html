@@ -450,11 +450,37 @@
 
 
         <script src="script.js"></script>
+
+        <!-- Change BG Color Ethos -->
         <script>
             function changeColorBgTwo(color){
                 let bg = document.querySelector('.value-page');
                 bg.style.transitionDuration = "1s";
                 bg.style.background = color;}
+        </script>
+
+        <!-- Reveal About Hero -->
+        <script>
+                const head = document.querySelector(".section_wrap section .about-page .left .hero h1");
+                const para = document.querySelector(".section_wrap section .about-page .left .hero p");
+                const aboutPG = document.querySelector(".about-page");
+                const options = {
+                    root: null,
+                    threshold: 0,
+                    rootMargin: "-150px"
+                }
+                head.classList.add("reveal");
+                para.classList.add("reveal");
+
+                const observer = new IntersectionObserver(function(entries, observer){
+                    entries.forEach(entry => {
+                        head.classList.toggle("reveal");
+                        para.classList.toggle("reveal");
+
+                    })
+                }, options);
+
+                observer.observe(aboutPG);
         </script>
     </body>
 </html>

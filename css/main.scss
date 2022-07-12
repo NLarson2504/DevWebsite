@@ -602,8 +602,12 @@ nav{
                         font-family: var(--secondary-font);
                         background: transparent;
                         width: 35%;
-                        transform: translateY(-15vh);
+                        transform: translate(-100%, -15vh);
+                        transition: 1s ease;
 
+                        &.reveal{
+                            transform: translate(0%, -15vh);
+                        }
                     }
 
                     p{
@@ -614,7 +618,13 @@ nav{
                         font-family: var(--primary-font);
                         background-color: transparent;
                         width: 35%;
-                        transform: translateY(5vh)
+                        transform: translate(-100%, 5vh);
+                        transition: 1s ease;
+                        transition-delay: 250ms;
+
+                        &.reveal{
+                            transform: translate(0%, 5vh);
+                        }
 
                     }
                 }
@@ -834,7 +844,7 @@ nav{
         overflow: hidden;
 
         .nav-wrapper{
-            overflow: hidden;
+            //overflow: hidden;
 
             &.vis{
                 overflow:visible;
@@ -848,14 +858,14 @@ nav{
             height: 100vh;
             top: 0vh;
             display: flex;
-            background-color: var(--primary-light-color);
+            background-color: var(--secondary-dark-color);
             flex-direction: column;
             align-items: left;
             width: 100%;
             transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-            padding-top: 25vh;
-            padding-bottom: 25vh;
+            transition: transform 0.4s ease-in;
+            padding-top: 30vh;
+            padding-bottom: 30vh;
 
             &.nav-active{
                 transform: translateX(0%);
@@ -891,7 +901,7 @@ nav{
 
                     .hero_upper{
                         h1{
-                            
+        
                         }
                     }
                 }
@@ -909,6 +919,41 @@ nav{
                     visibility: hidden;
                 }
             }
+        }
+
+        .work-page{
+            .hero{
+                .model{
+                    
+                    ul{
+                        margin-top: -50px;
+                        flex-direction: column;
+
+                        li{
+                            width: 75vw !important;
+                            height: 15vh !important;
+                            margin: 40px 0 40px 0;
+                            display: flex;
+                            align-items: center;
+
+                            h1{
+                                margin-left: 15%;
+                            }
+
+                            p{
+                                margin-left:10%;
+                                margin-right: 10%;
+                            }
+
+                            svg{
+                                margin-bottom: 4vh;
+                                margin-left: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 
