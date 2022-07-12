@@ -1014,5 +1014,20 @@ nav .call_action a {
   body .burger {
     display: block;
   }
+  section .landing .left .hero_wrap {
+    width: 100%;
+  }
+  section .landing .left .circle_one {
+    visibility: hidden;
+  }
+  section .landing .left .circle_two {
+    visibility: hidden;
+  }
+  section .landing .left .circle_three {
+    visibility: hidden;
+  }
+  section .landing .left .circle_four {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -151,6 +151,7 @@ nav{
             height: 100vh;
             display: flex;
             background: var(--primary-dark-color);
+            //margin-bottom: 100px;
 
             .left{
                 width: 50%;
@@ -878,6 +879,36 @@ nav{
         }
         .burger{
             display: block;
+        }
+    }
+
+    section{
+        .landing{
+            .left{
+
+                .hero_wrap{
+                    width: 100%;
+
+                    .hero_upper{
+                        h1{
+                            
+                        }
+                    }
+                }
+
+                .circle_one{
+                    visibility: hidden;
+                }
+                .circle_two{
+                    visibility: hidden;
+                }
+                .circle_three{
+                    visibility: hidden;
+                }
+                .circle_four{
+                    visibility: hidden;
+                }
+            }
         }
     }
 
