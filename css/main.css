@@ -18,13 +18,14 @@
 body {
   width: 100%;
   background-color: red;
-  overflow-y: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 .nav-wrapper {
   width: 100%;
   position: absolute;
+  z-index: 3;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
   min-height: 8vh;
   font-family: var(--primary-font);
   padding: 0 6.25% 0 6.25%;
-  background: var(--primary-dark-color);
+  background: transparent;
 }
 
 nav .menu-nav {
@@ -103,6 +104,7 @@ nav .call_action a {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 400;
+  font-size: 1em;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
@@ -212,6 +214,7 @@ nav .call_action a {
 .section_wrap section .landing .left .hero_wrap {
   width: 75%;
   margin-left: 12.5%;
+  z-index: 1;
 }
 
 .section_wrap section .landing .left .hero_wrap .hero_upper {
@@ -238,11 +241,70 @@ nav .call_action a {
   -webkit-text-fill-color: transparent;
 }
 
+.section_wrap section .landing .left .circle_one {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  margin-left: 30%;
+  margin-top: 60vh;
+  background-color: var(--primary-mid-color);
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.section_wrap section .landing .left .circle_two {
+  position: absolute;
+  width: 30vh;
+  height: 30vh;
+  margin-left: 5%;
+  margin-top: 10vh;
+  background-color: var(--secondary-light-color);
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.section_wrap section .landing .left .circle_three {
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  margin-left: 50%;
+  margin-top: 8vh;
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.section_wrap section .landing .left .circle_four {
+  position: absolute;
+  width: 2vh;
+  height: 2vh;
+  margin-left: 55%;
+  margin-top: 70vh;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 1;
+}
+
 .section_wrap section .landing .right {
   width: 50%;
-  height: calc(100% - 8vh);
-  margin-top: 8vh;
+  height: 100%;
   float: right;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.section_wrap section .landing .right .semi {
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  float: right;
+  -webkit-transform: translate(50%, -12.5%);
+          transform: translate(50%, -12.5%);
+  border-radius: 50%;
 }
 
 .section_wrap section .value-page {
@@ -900,7 +962,7 @@ nav .call_action a {
   background-size: 100% 3px;
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 760px) {
   body {
     overflow-x: hidden;
   }
