@@ -341,7 +341,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-one h3 {
-  font-size: 2.25em;
+  font-size: 5vw;
   position: absolute;
   background: transparent;
   font-family: var(--secondary-font);
@@ -403,7 +403,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-two h3 {
-  font-size: 2.25em;
+  font-size: 5vw;
   position: absolute;
   margin-top: auto;
   background: transparent;
@@ -466,7 +466,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-three h3 {
-  font-size: 2.25em;
+  font-size: 5vw;
   font-weight: 700;
   position: absolute;
   margin-top: auto;
@@ -670,7 +670,7 @@ nav .call_action a {
 
 .section_wrap section .about-page .left {
   width: 50%;
-  float: left;
+  float: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -747,7 +747,7 @@ nav .call_action a {
 
 .section_wrap section .about-page .right {
   width: 50%;
-  float: right;
+  float: left;
 }
 
 .section_wrap section .about-page .right .svg_wrap {
@@ -1070,6 +1070,9 @@ nav .call_action a {
   section .work-page .hero .model ul li svg {
     margin-bottom: 4vh;
     margin-left: 5%;
+  }
+  #landing {
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=main.css.map */
