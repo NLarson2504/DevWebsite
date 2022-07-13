@@ -68,7 +68,9 @@
                     </div>
                     <div class="right">
                         <div class="semi"></div>
-                        
+                    </div>
+                    <div class="img-wrap">
+                        <img src="/imgs/img.png" alt="Computer">
                     </div>
                 </div>
             </section>
@@ -393,7 +395,7 @@
                     <div class="contact_wrap">
                         <h1>Want to collaborate with us?</h1>
                     
-                        <h2 class="fancy-link">AcmeSoftwareDesign@gmail.com</h1>
+                        <h2 class="fancy-link">Nickolars123@gmail.com</h1>
                     </div>
         
                     <div class="column_wrap">
@@ -422,9 +424,8 @@
                         <div class="social_bar">
                             <h1>Details</h1>
                             <ul>
-                                <li><a>Chapel Hill,</a></li>
-                                <li><a>North Carolina,</a></li>
-                                <li><a>USA</a></li>
+                                <li><a>Chapel Hill, NC</a></li>
+                                <li><a>United States</a></li>
                             </ul>
             
                         </div>
@@ -483,6 +484,22 @@
 
                 observer.observe(aboutPG);
         </script>
+
+        <!-- Move Landing Img -->
+        <script>
+            const img = document.querySelector(".section_wrap section .landing .img-wrap img ");
+            const landingPG = document.querySelector(".landing");
+
+            landingPG.addEventListener('mousemove', function (e){
+                var xPos = ((e.clientX - (img.offsetWidth / 2))/10);
+                var yPos = ((e.clientY - (img.offsetHeight / 2))/10);
+                
+                var translate3dValue = "translate3d(" + xPos + "px," + yPos + "px, 0)";
+                
+                img.style.transform = translate3dValue;
+            })
+        </script>
+
     </body>
 </html>
 
