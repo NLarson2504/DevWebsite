@@ -26,7 +26,7 @@
                         <nav>
                             <div class="menu-nav">                            
                                 <div class="logo">
-                                <a href="#landing"><svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="index.html"><svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="0.5" x2="0.5" y2="25" stroke="white"/>
                                     <line x1="2.5" x2="2.5" y2="25" stroke="white"/>
                                     <line x1="4.5" x2="4.5" y2="25" stroke="white"/>
@@ -37,7 +37,7 @@
                             </div>
     
                             <ul class="nav-links">
-                                <li><a href="#landing">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="#work">Steps</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#contact">Contact</a></li>
@@ -68,6 +68,7 @@
                     </div>
                     <div class="right">
                         <div class="semi"></div>
+                        
                     </div>
                 </div>
             </section>
@@ -82,7 +83,7 @@
             </div> -->
 
             <!--   001 - Ethos   -->
-            <section>
+            <section id="ethos">
                 <div class="value-page">
                     <div class="title">/ETHOS</div>
                     <div class="title-num">01</div>
@@ -326,11 +327,18 @@
 
             <!--   003 - About Me   -->
             <section id="about">
-                <div class="about-page" onmousemove="javascript:moveSVG(event)">
+                <div class="about-page">       
+                        
                     <div class="left">
                         <div class="title">/ABOUT</div>
                         <div class="title-num">03</div>
-                        <div class="circle_wrap"><span class="circle"></span></div>
+                        <div class="svg-wrap">
+                            <svg width="100%" height="100vh" viewBox="0 0 64 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M63.6136 0.272725V73H47.1364L20.858 34.7898H20.4318V73H0.6875V0.272725H17.4489L43.3011 38.3409H43.8693V0.272725H63.6136Z" fill="#FFB703"/>
+                                </svg>
+                                
+                        </div>   
+                        <!--<div class="circle_wrap"><span class="circle"></span></div> -->
                     
                         <div class="hero">
                             <h1>We Are A Young Web-Dev Business</h1>
@@ -403,10 +411,10 @@
                         <div class="social_bar">
                             <h1>Pages</h1>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Ethos</a></li>
-                                <li><a href="#">Work</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#ethos">Ethos</a></li>
+                                <li><a href="#work">Steps</a></li>
+                                <li><a href="#about">About</a></li>
                             </ul>
             
                         </div>
@@ -414,8 +422,9 @@
                         <div class="social_bar">
                             <h1>Details</h1>
                             <ul>
-                                <li><a>Chapel Hill, NC</a></li>
-                                <li><a>United States</a></li>
+                                <li><a>Chapel Hill,</a></li>
+                                <li><a>North Carolina,</a></li>
+                                <li><a>USA</a></li>
                             </ul>
             
                         </div>

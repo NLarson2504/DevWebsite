@@ -189,7 +189,7 @@ nav .call_action a {
 
 .section_wrap section .landing {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ nav .call_action a {
 
 .section_wrap section .landing .right .semi {
   width: 150%;
-  height: 150%;
+  height: calc(120vh);
   background-color: white;
   float: right;
   -webkit-transform: translate(50%, -12.5%);
@@ -352,7 +352,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-one p {
-  font-size: 1em;
+  font-size: 2vw;
   position: absolute;
   background: transparent;
   font-family: var(--primary-font);
@@ -415,7 +415,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-two p {
-  font-size: 1em;
+  font-size: 2vw;
   position: absolute;
   background: transparent;
   font-family: var(--primary-font);
@@ -479,7 +479,7 @@ nav .call_action a {
 }
 
 .section_wrap section .value-page .value-wrapper .col-three p {
-  font-size: 1em;
+  font-size: 2vw;
   position: absolute;
   background: transparent;
   font-family: var(--primary-font);
@@ -665,7 +665,7 @@ nav .call_action a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .section_wrap section .about-page .left {
@@ -690,6 +690,13 @@ nav .call_action a {
           transform: translateX(-300px);
 }
 
+.section_wrap section .about-page .left .svg-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
 .section_wrap section .about-page .left .hero {
   height: 100%;
   width: 100%;
@@ -708,7 +715,7 @@ nav .call_action a {
   position: absolute;
   color: black;
   margin: auto;
-  font-size: 4vw;
+  font-size: calc(3vw + 10px);
   font-weight: 600;
   font-family: var(--secondary-font);
   background: transparent;
