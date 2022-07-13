@@ -137,7 +137,7 @@ nav{
     overflow: scroll;
     height: 100vh;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     width: 100%;
 
     section{
@@ -689,7 +689,7 @@ nav{
                     width: 100%;
                     /* Height of the footer*/ 
                     height: 60px;
-                    margin-top: 90vh;
+                    margin-top: calc(90vh);
                     align-items: center;
                     justify-content: center;
                     display: flex;

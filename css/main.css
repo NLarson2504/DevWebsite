@@ -175,8 +175,8 @@ nav .call_action a {
   height: 100vh;
   -ms-scroll-snap-points-y: repeat(100vh);
       scroll-snap-points-y: repeat(100vh);
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   width: 100%;
 }
 
@@ -808,7 +808,7 @@ nav .call_action a {
   width: 100%;
   /* Height of the footer*/
   height: 60px;
-  margin-top: 90vh;
+  margin-top: calc(90vh);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
