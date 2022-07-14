@@ -45,6 +45,7 @@ nav{
             padding-right: 40px;
             border-right: 1px solid rgba(255, 255, 255, 0.30);
             margin-right: 40px;
+            
         }
     }
 
@@ -669,11 +670,16 @@ nav{
                    display: flex;
                    align-items: center;
                    justify-content: center;
-                   transform: translate3d(0, 0, 0);
 
                    svg{
                     margin: 0 5% 0 5%;
-                    display: block;
+                    display: absolute;
+                    transform: translate3d(100%, 0, 0);
+                    transition: 1s ease;
+
+                    &.reveal{
+                        transform: translate3d(0, 0, 0);
+                    }
                    }
                 }
             }

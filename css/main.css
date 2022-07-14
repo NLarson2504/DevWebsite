@@ -791,13 +791,20 @@ nav .call_action a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
 .section_wrap section .about-page .right .svg_wrap svg {
   margin: 0 5% 0 5%;
-  display: block;
+  display: absolute;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.section_wrap section .about-page .right .svg_wrap svg.reveal {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .section_wrap section .about-page h1 {

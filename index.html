@@ -26,14 +26,12 @@
                         <nav>
                             <div class="menu-nav">                            
                                 <div class="logo">
-                                <a href="index.html"><svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="0.5" x2="0.5" y2="25" stroke="white"/>
-                                    <line x1="2.5" x2="2.5" y2="25" stroke="white"/>
-                                    <line x1="4.5" x2="4.5" y2="25" stroke="white"/>
-                                    <line x1="15" y1="24.5" x2="5" y2="24.5" stroke="white"/>
-                                    <line x1="15" y1="22.5" x2="5" y2="22.5" stroke="white"/>
-                                    <line x1="15" y1="20.5" x2="5" y2="20.5" stroke="white"/>
-                                    </svg></a>
+                                <a href="index.html"><svg width="45" height="35" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.728 52L23.953 75.0056C24.4799 76.3196 23.5123 77.75 22.0967 77.75H6.46735C5.02337 77.75 4.05525 76.2666 4.63659 74.9448L14.728 52Z" fill="#C4C4C4"/>
+                                    <path d="M67.0535 32.75L57.8285 9.74436C57.3016 8.43041 58.2691 7 59.6848 7L75.3141 7C76.7581 7 77.7262 8.48341 77.1449 9.80519L67.0535 32.75Z" fill="#C4C4C4"/>
+                                    <path d="M17.021 6.63599C18.3471 6.63599 19.6188 7.16277 20.5565 8.10045L77.0663 64.6102C78.004 65.5479 78.5308 66.8197 78.5308 68.1458L78.5308 78.8026L67.8739 78.8026C66.5478 78.8026 65.276 78.2758 64.3384 77.3382L7.82859 20.8284C6.89091 19.8907 6.36412 18.6189 6.36412 17.2928L6.36412 6.63599L17.021 6.63599Z" fill="#C4C4C4"/>
+                                    </svg>
+                                    </a>
                             </div>
     
                             <ul class="nav-links">
@@ -75,15 +73,6 @@
                 </div>
             </section>
 
-            <!--<div class="quote">
-                <div class="quote_wrap">
-                    <h1>
-                        “Creativity is thinking up new things. Innovation is doing new things.“
-                    </h1>
-                </div>
-                
-            </div> -->
-
             <!--   001 - Ethos   -->
             <section id="ethos">
                 <div class="value-page">
@@ -108,7 +97,7 @@
                             <div class="img-wrap"><img src="/imgs/nejc-soklic-wO42Rmamef8-unsplash.jpg" alt="Laptop collaboration" width=100% height=100%></div>
                             <!-- <h4>03</h4> -->
                             <h3>Innovative</h3>
-                            <p>Creativity is key when it comes to an eye-catching web design. Our job is to balance innovation with simplicity to ensure an engaging and accesssible web experience! </p>
+                            <p>Creativity is key when it comes to an eye-catching web design. Our job is to balance innovation with simplicity to create an engaging website! </p>
                         </div>
                     </div>
                 </div>
@@ -435,13 +424,10 @@
                     <div class="logo_wrap">
                         <div class="horizontal_line"></div>
                         <div class="logo">
-                            <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0.5" x2="0.5" y2="25" stroke="white"/>
-                                <line x1="2.5" x2="2.5" y2="25" stroke="white"/>
-                                <line x1="4.5" x2="4.5" y2="25" stroke="white"/>
-                                <line x1="15" y1="24.5" x2="5" y2="24.5" stroke="white"/>
-                                <line x1="15" y1="22.5" x2="5" y2="22.5" stroke="white"/>
-                                <line x1="15" y1="20.5" x2="5" y2="20.5" stroke="white"/>
+                            <svg width="45" height="35" viewBox="0 0 85 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.728 52L23.953 75.0056C24.4799 76.3196 23.5123 77.75 22.0967 77.75H6.46735C5.02337 77.75 4.05525 76.2666 4.63659 74.9448L14.728 52Z" fill="#C4C4C4"/>
+                                <path d="M67.0535 32.75L57.8285 9.74436C57.3016 8.43041 58.2691 7 59.6848 7L75.3141 7C76.7581 7 77.7262 8.48341 77.1449 9.80519L67.0535 32.75Z" fill="#C4C4C4"/>
+                                <path d="M17.021 6.63599C18.3471 6.63599 19.6188 7.16277 20.5565 8.10045L77.0663 64.6102C78.004 65.5479 78.5308 66.8197 78.5308 68.1458L78.5308 78.8026L67.8739 78.8026C66.5478 78.8026 65.276 78.2758 64.3384 77.3382L7.82859 20.8284C6.89091 19.8907 6.36412 18.6189 6.36412 17.2928L6.36412 6.63599L17.021 6.63599Z" fill="#C4C4C4"/>
                                 </svg>
                         </div>
                     </div>
@@ -465,6 +451,7 @@
         <script>
                 const head = document.querySelector(".section_wrap section .about-page .left .hero h1");
                 const para = document.querySelector(".section_wrap section .about-page .left .hero p");
+                const workingSVG = document.querySelector(".section_wrap section .about-page .right .svg_wrap svg");
                 const aboutPG = document.querySelector(".about-page");
                 const options = {
                     root: null,
@@ -473,11 +460,13 @@
                 }
                 head.classList.add("reveal");
                 para.classList.add("reveal");
+                workingSVG.classList.add("reveal");
 
                 const observer = new IntersectionObserver(function(entries, observer){
                     entries.forEach(entry => {
                         head.classList.toggle("reveal");
                         para.classList.toggle("reveal");
+                        workingSVG.classList.toggle("reveal");
 
                     })
                 }, options);
